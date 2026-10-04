@@ -1,4 +1,4 @@
-export const BASE = "http://localhost:8089";
+exportconst API_BASE = "https://parkingapp-backend-production.up.railway.app";
 export class ApiError extends Error { constructor(status, message) { super(message); this.status = status; } }
 export const getToken = () => localStorage.getItem("token");
 export const clearSession = () => { localStorage.removeItem("token"); localStorage.removeItem("user"); };
